@@ -6,7 +6,7 @@ services:
     environment:
       CRAWLAB_NODE_MASTER: "Y"
       CRAWLAB_MONGO_HOST: "mongo"
-    expose:
+    ports:
       - "${FRONTEND_PORT}"
     depends_on:
       - mongo
